@@ -68,7 +68,7 @@ const Row1 = () => {
           subtitle="top line represents revenue, bottom line represents expenses"
           sideText="+4%"
         />
-        <ResponsiveContainer width="100%" height="100%">
+        
           <AreaChart
             width={500}
             height={400}
@@ -135,15 +135,15 @@ const Row1 = () => {
               fill="url(#colorExpenses)"
             />
           </AreaChart>
-        </ResponsiveContainer>
+       
       </DashboardBox>
-      <DashboardBox gridArea="b">
+       <DashboardBox gridArea="b">
         <BoxHeader
           title="Profit and Revenue"
           subtitle="top line represents revenue, bottom line represents expenses"
           sideText="+4%"
         />
-        <ResponsiveContainer width="100%" height="100%">
+       
           <LineChart
             width={500}
             height={400}
@@ -194,7 +194,7 @@ const Row1 = () => {
               stroke={palette.primary.main}
             />
           </LineChart>
-        </ResponsiveContainer>
+       
       </DashboardBox>
       <DashboardBox gridArea="c">
         <BoxHeader
@@ -202,7 +202,7 @@ const Row1 = () => {
           subtitle="graph representing the revenue month by month"
           sideText="+4%"
         />
-        <ResponsiveContainer width="100%" height="100%">
+        
           <BarChart
             width={500}
             height={300}
@@ -243,7 +243,7 @@ const Row1 = () => {
             <Tooltip />
             <Bar dataKey="revenue" fill="url(#colorRevenue)" />
           </BarChart>
-        </ResponsiveContainer>
+       
       </DashboardBox>
     </>
   );
