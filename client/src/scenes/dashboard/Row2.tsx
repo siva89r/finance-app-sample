@@ -66,7 +66,7 @@ const Row2 = () => {
           title="Operational vs Non-Operational Expenses"
           sideText="+4%"
         />
-        <ResponsiveContainer width="100%" height="100%">
+       
           <LineChart
             data={operationalExpenses}
             margin={{
@@ -110,7 +110,7 @@ const Row2 = () => {
               stroke={palette.primary.main}
             />
           </LineChart>
-        </ResponsiveContainer>
+        
       </DashboardBox>
       <DashboardBox gridArea="e">
         <BoxHeader title="Campaigns and Targets" sideText="+4%" />
@@ -161,7 +161,7 @@ const Row2 = () => {
       </DashboardBox>
       <DashboardBox gridArea="f">
         <BoxHeader title="Product Prices vs Expenses" sideText="+4%" />
-        <ResponsiveContainer width="100%" height="100%">
+      
           <ScatterChart
             margin={{
               top: 20,
@@ -197,7 +197,6 @@ const Row2 = () => {
               fill={palette.tertiary[500]}
             />
           </ScatterChart>
-        </ResponsiveContainer>
       </DashboardBox>
     </>
   );
